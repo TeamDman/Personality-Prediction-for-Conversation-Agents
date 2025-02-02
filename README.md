@@ -5,6 +5,7 @@ This is the project page of our paper "Predicting Personality Traits for Fully-D
 - Sample Prompts and Responses for Backchannel Classification: [NA]()
 - Sample Prompts and Responses for Personality Prediction: [NA]()
 - Prediction Results of Personality Labels for Fisher: [NA]()
+- Human-annotated Personality Labels for Fisher [NA]()
 - Sample Pages for Subjective Evaluation Website: [NA]()
 
 # Todo
