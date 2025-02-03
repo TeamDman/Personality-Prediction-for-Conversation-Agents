@@ -1,0 +1,83 @@
+Your task is to classify "Character" of the speaker in conversation using Big Five Inventory (BFI) Personality Traits. BFI includes five features: openness, conscientinousness, extraversion, agreeableness, and neuroticism, which is detailed as follows. We also display the opposite term for each class:
+- "openness": intellectual, imaginative, independent-minded; opposite term is "closedness".
+- "conscientiousness": orderly, responsible, dependable; opposite term is "lack of direction".
+- "extraversion": talkative, assertive, energetic; opposite term is "introversion".
+- "agreeableness": good-natured, cooperative, trustful; opposite term is "antagonism".
+- "neuroticism": emotional instability, irritability, anxiety, self-doubt, depression; opposite term is "emotion stability".
+
+We analyzed the real conversation between two speakers and summarize their behaviours. Your task is to classify the characters using those information and sample responses. Here, I define some words used in the analysis.
+- "backchannel": The backchannel responses are feedbacks given while someone else is talking, to show interest, attention and/or a willingness to keep listening. 
+- "emotive": The emotive backchannel is used to express the speaker's emotional state. 
+- "cognitive": The cognitive backchannel is another backchannel response used to reflect the speaker's thought processes or cognitive states. 
+- "interjection": Interjections are the responses that interject someone to stop talking and claim the speaking turn.
+
+Additionally, we also show some sample responses spoken by the target speaker. We randomly extract some samples from 12-minute conversation. We excluded special tokens like commas, periods, or question marks. 
+
+We put all information about the target speaker within the text delimited by triple backtics.
+
+```
+Sample Responses:
+  Sample 1: do you belong to any of the boards
+  Sample 2: that's what i have with us out here i mean the one that we have in the office we just kind of tamed it and brought it in but the rest are just wild
+  Sample 3: right and there's well yeah if you could come up with i do not know something really special that no one had thought of yet to make
+  Sample 4: i do not even remember how long it was supposed to be
+  Sample 5: yep i am in knoxville and close to the smoky mountain park and there's a million tourists coming through looking to spend money
+  Sample 6: well how did you find out about doing it
+  Sample 7: i [StartLaugh] know [EndLaugh] what i think it's like oh no [Laugh]
+  Sample 8: or selling it you know after you spend all that time making something selling it for you know what it's worth to you
+  Sample 9: oh exactly and it's just nice getting up and coming to work in the morning [StartLaugh] because i miss her [EndLaugh]
+  Sample 10: yep we actually have a cat here in our office
+  Sample 11: think of this idea that no one has thought of yet and it's like
+  Sample 12: i wonder how successful i would actually be if i had to motivate myself to get up and go to work in the morning if i did not have to
+  Sample 13: i am not sure well
+  Sample 14: exactly i mean if no one was making you get up and go to work you know [StartLaugh] could you i do not know i do not know [EndLaugh]
+  Sample 15: i would say the price of rent in any place that's in a tourist center would be just outrageous
+  Sample 16: so it's neat and then we have probably about ten wild ones outside that we feed
+  Sample 17: well it just kind of happened and [StartLaugh] he just lets us [EndLaugh]
+  Sample 18: [StartLaugh] i [EndLaugh] i mean i can do it but i will spend a fortune making something and i just do not see you know making a profit on it
+  Sample 19: there was another question about how if we would be how successful we would be at it
+  Sample 20: hey me too i would be interested in opening a craft store actually yes
+
+Emotions:
+  anger: 3.8% (average: 4.3%)
+  disgust: 0.0% (average: 2.1%)
+  fear: 3.8% (average: 4.5%)
+  joy: 11.5% (average: 13.0%)
+  neutral: 46.2% (average: 48.8%)
+  sadness: 0.0% (average: 8.3%)
+  surprise: 34.6% (average: 19.0%)
+
+Sentiment:
+  positive: 15.4% (average: 13.6%)
+  neutral: 65.4% (average: 58.7%)
+  negative: 19.2% (average: 27.7%)
+
+Basic Statistics:
+  Number of turns: Normal
+  Talking time per turn: Normal
+  Frequency of Laughter: Very Frequent
+  Frequency of Emotive Backchannel: Very Frequent
+  Frequency of Cognitive Backchannel: Normal
+  Frequency of interjections: Normal
+
+```
+
+Your response must include the classification result in JSON format at the end of the response.
+You must perform analysis via following steps:
+1. Summarize features you need to consider for predicting conversation characters.
+2. Summarize the five conversation characters (BFI)
+3. Determine the analyzed features related to each conversation character.
+4. Summarize the sample responses.
+5. Summarize the emotion distribution.
+6. Summarize the sentiment scores
+7. Summarize the basic statistics.
+8. Classify the five conversation features with five options "highly aligned", "aligned", "neutral", "opposed", "highly opposed". Give "opposed" or "highly opposed" if the character is more aligned with the opposite terms.
+
+This is an example of JSON:
+{
+'openness': ...,
+'conscientiousness': ...,
+'extraversion': ...,
+'agreeableness': ...,
+'neuroticism': ...,
+}

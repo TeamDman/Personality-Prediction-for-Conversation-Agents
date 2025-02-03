@@ -1,0 +1,83 @@
+Your task is to classify "Character" of the speaker in conversation using Big Five Inventory (BFI) Personality Traits. BFI includes five features: openness, conscientinousness, extraversion, agreeableness, and neuroticism, which is detailed as follows. We also display the opposite term for each class:
+- "openness": intellectual, imaginative, independent-minded; opposite term is "closedness".
+- "conscientiousness": orderly, responsible, dependable; opposite term is "lack of direction".
+- "extraversion": talkative, assertive, energetic; opposite term is "introversion".
+- "agreeableness": good-natured, cooperative, trustful; opposite term is "antagonism".
+- "neuroticism": emotional instability, irritability, anxiety, self-doubt, depression; opposite term is "emotion stability".
+
+We analyzed the real conversation between two speakers and summarize their behaviours. Your task is to classify the characters using those information and sample responses. Here, I define some words used in the analysis.
+- "backchannel": The backchannel responses are feedbacks given while someone else is talking, to show interest, attention and/or a willingness to keep listening. 
+- "emotive": The emotive backchannel is used to express the speaker's emotional state. 
+- "cognitive": The cognitive backchannel is another backchannel response used to reflect the speaker's thought processes or cognitive states. 
+- "interjection": Interjections are the responses that interject someone to stop talking and claim the speaking turn.
+
+Additionally, we also show some sample responses spoken by the target speaker. We randomly extract some samples from 12-minute conversation. We excluded special tokens like commas, periods, or question marks. 
+
+We put all information about the target speaker within the text delimited by triple backtics.
+
+```
+Sample Responses:
+  Sample 1: well another thing that has changed too is i unfortunately had to go and do a deposition for when i did work i was a nurse
+  Sample 2: well right now it's been we had a real cold snap and we got quite low like around 20 at nighttime it's back up the temperatures are hanging right around 60 during the day and tonight's going to dip down into the high 20s but the rest of the week should be in the 30s at night so it's been one of the colder winters we have had in probably about 10 years i know that last year the year before i had the air conditioning running at christmas
+  Sample 3: i believe she was i want to say indian
+  Sample 4: you know and that definitely you know is not a [StartLaugh] cool thing to have happen [EndLaugh]
+  Sample 5: you have a place called young american in minnesota do not you yeah
+  Sample 6: but you know my father at that time moved with the cape he came down to the cape so i lived over on the east coast for like 20 years and then i moved inward i am in ocala right now which is kind of a small town
+  Sample 7: yeah because i know that i have had like sent things to young america minnesota and i wondered if maybe that was you know some kind of huge place that probably has come under more security now and what have you since the mail system is also screwed up
+  Sample 8: you know i do not think that you are even allowed to wear a cap
+  Sample 9: gas today was $1 55 a gallon
+  Sample 10: i mean that's like pretty much a right place to have you know terrorist attacks i guess that in texas you know so i do not know what they have had to do i have not been out that way in quite a while i used to live over there on the east coast but i do not anymore
+  Sample 11: i guess you know and there's i do not know i just wish that bush would put his focus back where it belongs [StartLaugh] the [EndLaugh] terrorism
+  Sample 12: you know i mean even to think about putting gas in my car makes me want to cry you know
+  Sample 13: i mean it's just it's affected us tremendously
+  Sample 14: like india indian not seminole or you know something like that
+  Sample 15: yeah well i have lived here a long long time i came down as a child
+  Sample 16: mm hmm mm hmm have you noticed any difference in violence on tv or anything like that i have noticed kind of a cutback on that kind of stuff
+  Sample 17: i understand though that the security is really heavy at the airport anymore too so it's really put a damper on some of the things that i have wanted to do
+  Sample 18: mm hmm yeah yeah summer is very very humid here very
+  Sample 19: you know he's kind of defocused as far as i am concerned it's really really too bad
+  Sample 20: right well what really saddened me was not only was i not allowed to take my pocketbook in but i am asthmatic and i carry an inhaler and they did not want me to i had to get like special permission to be able to carry something like that in with me should i need it wow
+
+Emotions:
+  anger: 0.0% (average: 4.3%)
+  disgust: 0.0% (average: 2.1%)
+  fear: 8.6% (average: 4.5%)
+  joy: 5.2% (average: 13.0%)
+  neutral: 46.6% (average: 48.8%)
+  sadness: 17.2% (average: 8.3%)
+  surprise: 22.4% (average: 19.0%)
+
+Sentiment:
+  positive: 3.4% (average: 13.6%)
+  neutral: 63.8% (average: 58.7%)
+  negative: 32.8% (average: 27.7%)
+
+Basic Statistics:
+  Number of turns: Normal
+  Talking time per turn: Normal
+  Frequency of Laughter: Normal
+  Frequency of Emotive Backchannel: Normal
+  Frequency of Cognitive Backchannel: Normal
+  Frequency of interjections: Normal
+
+```
+
+Your response must include the classification result in JSON format at the end of the response.
+You must perform analysis via following steps:
+1. Summarize features you need to consider for predicting conversation characters.
+2. Summarize the five conversation characters (BFI)
+3. Determine the analyzed features related to each conversation character.
+4. Summarize the sample responses.
+5. Summarize the emotion distribution.
+6. Summarize the sentiment scores
+7. Summarize the basic statistics.
+8. Classify the five conversation features with five options "highly aligned", "aligned", "neutral", "opposed", "highly opposed". Give "opposed" or "highly opposed" if the character is more aligned with the opposite terms.
+
+This is an example of JSON:
+{
+'openness': ...,
+'conscientiousness': ...,
+'extraversion': ...,
+'agreeableness': ...,
+'neuroticism': ...,
+}

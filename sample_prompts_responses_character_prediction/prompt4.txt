@@ -1,0 +1,83 @@
+Your task is to classify "Character" of the speaker in conversation using Big Five Inventory (BFI) Personality Traits. BFI includes five features: openness, conscientinousness, extraversion, agreeableness, and neuroticism, which is detailed as follows. We also display the opposite term for each class:
+- "openness": intellectual, imaginative, independent-minded; opposite term is "closedness".
+- "conscientiousness": orderly, responsible, dependable; opposite term is "lack of direction".
+- "extraversion": talkative, assertive, energetic; opposite term is "introversion".
+- "agreeableness": good-natured, cooperative, trustful; opposite term is "antagonism".
+- "neuroticism": emotional instability, irritability, anxiety, self-doubt, depression; opposite term is "emotion stability".
+
+We analyzed the real conversation between two speakers and summarize their behaviours. Your task is to classify the characters using those information and sample responses. Here, I define some words used in the analysis.
+- "backchannel": The backchannel responses are feedbacks given while someone else is talking, to show interest, attention and/or a willingness to keep listening. 
+- "emotive": The emotive backchannel is used to express the speaker's emotional state. 
+- "cognitive": The cognitive backchannel is another backchannel response used to reflect the speaker's thought processes or cognitive states. 
+- "interjection": Interjections are the responses that interject someone to stop talking and claim the speaking turn.
+
+Additionally, we also show some sample responses spoken by the target speaker. We randomly extract some samples from 12-minute conversation. We excluded special tokens like commas, periods, or question marks. 
+
+We put all information about the target speaker within the text delimited by triple backtics.
+
+```
+Sample Responses:
+  Sample 1: yeah it really scared me so i did not want to make him mad again so i am glad he did it though i really am
+  Sample 2: yeah it is so it's like something's wrong here and your advertisements are not working and i do not know it's too bad if they only knew what they were getting into and how hard it's going to be to quit when you really wanted to
+  Sample 3: well i have a sister in law that she does not want to quit because of that
+  Sample 4: but then my father caught me and tore the you know cigarettes up in front of me and really got in my face so
+  Sample 5: yeah that's hard to believe nowadays
+  Sample 6: stamina or no stigma or something
+  Sample 7: and of course during college that's a lot of what they do and
+  Sample 8: i thought they were going to say personal habits you know like my own or your own
+  Sample 9: so we have always preached to them please you know if you are going to drink just stay home or stay wherever you are so you do not get in any trouble or hurt somebody you know including yourself so that's one of the things we have always stressed
+  Sample 10: oh really when i was really too young like eighth grade i tried it i thought i was cool for some reason
+  Sample 11: or it could be you know like they call it the peace pipe maybe they felt well you know these indians have been nice to us i think we better share [Laugh]
+  Sample 12: and you people like you sometimes they are allergic to the smoke even or it would affect them that way
+  Sample 13: yeah yeah yeah and whenever my husband and i go out to dinner or for a drink or something you know or even to a party where there's smokers and we come home and we have to either throw our clothes downstairs or
+  Sample 14: i know yeah so did you ever try smoking
+  Sample 15: yeah i know plus i hit the switch phones
+  Sample 16: and drinking i drink a little bit but i get very mad when i hear about you know dwis and
+  Sample 17: that's good let us see what else do a lot of the girls there smoke
+  Sample 18: yeah me too i have to have it in the morning to wake up
+  Sample 19: you know she does not want to gain weight so but it's affecting her health or it will eventually and i do not want to see her you know get sick or cancer or whatever but
+  Sample 20: as long as we do not get into anything heavier or whatever i thought i read somewhere that the smoking is decreasing in men but increasing in women
+
+Emotions:
+  anger: 8.8% (average: 4.3%)
+  disgust: 3.5% (average: 2.1%)
+  fear: 7.0% (average: 4.5%)
+  joy: 10.5% (average: 13.0%)
+  neutral: 43.9% (average: 48.8%)
+  sadness: 14.0% (average: 8.3%)
+  surprise: 12.3% (average: 19.0%)
+
+Sentiment:
+  positive: 8.8% (average: 13.6%)
+  neutral: 57.9% (average: 58.7%)
+  negative: 33.3% (average: 27.7%)
+
+Basic Statistics:
+  Number of turns: Many
+  Talking time per turn: Normal
+  Frequency of Laughter: Normal
+  Frequency of Emotive Backchannel: Normal
+  Frequency of Cognitive Backchannel: Frequent
+  Frequency of interjections: Normal
+
+```
+
+Your response must include the classification result in JSON format at the end of the response.
+You must perform analysis via following steps:
+1. Summarize features you need to consider for predicting conversation characters.
+2. Summarize the five conversation characters (BFI)
+3. Determine the analyzed features related to each conversation character.
+4. Summarize the sample responses.
+5. Summarize the emotion distribution.
+6. Summarize the sentiment scores
+7. Summarize the basic statistics.
+8. Classify the five conversation features with five options "highly aligned", "aligned", "neutral", "opposed", "highly opposed". Give "opposed" or "highly opposed" if the character is more aligned with the opposite terms.
+
+This is an example of JSON:
+{
+'openness': ...,
+'conscientiousness': ...,
+'extraversion': ...,
+'agreeableness': ...,
+'neuroticism': ...,
+}

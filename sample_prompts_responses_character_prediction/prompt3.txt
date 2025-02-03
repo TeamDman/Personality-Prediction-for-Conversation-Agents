@@ -1,0 +1,83 @@
+Your task is to classify "Character" of the speaker in conversation using Big Five Inventory (BFI) Personality Traits. BFI includes five features: openness, conscientinousness, extraversion, agreeableness, and neuroticism, which is detailed as follows. We also display the opposite term for each class:
+- "openness": intellectual, imaginative, independent-minded; opposite term is "closedness".
+- "conscientiousness": orderly, responsible, dependable; opposite term is "lack of direction".
+- "extraversion": talkative, assertive, energetic; opposite term is "introversion".
+- "agreeableness": good-natured, cooperative, trustful; opposite term is "antagonism".
+- "neuroticism": emotional instability, irritability, anxiety, self-doubt, depression; opposite term is "emotion stability".
+
+We analyzed the real conversation between two speakers and summarize their behaviours. Your task is to classify the characters using those information and sample responses. Here, I define some words used in the analysis.
+- "backchannel": The backchannel responses are feedbacks given while someone else is talking, to show interest, attention and/or a willingness to keep listening. 
+- "emotive": The emotive backchannel is used to express the speaker's emotional state. 
+- "cognitive": The cognitive backchannel is another backchannel response used to reflect the speaker's thought processes or cognitive states. 
+- "interjection": Interjections are the responses that interject someone to stop talking and claim the speaking turn.
+
+Additionally, we also show some sample responses spoken by the target speaker. We randomly extract some samples from 12-minute conversation. We excluded special tokens like commas, periods, or question marks. 
+
+We put all information about the target speaker within the text delimited by triple backtics.
+
+```
+Sample Responses:
+  Sample 1: it's probably like do you agree no do you agree no and do you agree yes do you agree yes what else is there to say
+  Sample 2: that's okay that's okay i think there was a specific amount of time
+  Sample 3: well see i take care of a couple of ventilator patients right now
+  Sample 4: yeah if there's no use going to a doctor if you just catch a virus off of somebody then you are going to get nailed if you be careful and wash your hands you are less likely to catch something
+  Sample 5: most people you know they say some people get sicker in the wintertime and i do not really see it that way myself
+  Sample 6: i suppose that would be because they are you know probably maybe they are exposed to the viruses up here and they have had them all once you have
+  Sample 7: and me and the guys get along fine but their mom needs somebody to hate and she picked me
+  Sample 8: yeah it's just if you do not drink enough you get dehydrated
+  Sample 9: i got it off of that forum i found it on
+  Sample 10: and she's always being really nasty and she's getting worse this year i am just getting tired of it so i told the guys i am like you know i am sorry we have been together a long time but i am not going to take this kind of abuse any longer this is ridiculous your mother can not control her mouth i am going to have to leave
+  Sample 11: well especially when i have been taking care of the same guys for 14 years
+  Sample 12: other side yeah yep yep she had the house for a very long time her mama lived in it and then when great grandma died she sold it because she had no reason for it having the house anymore
+  Sample 13: yeah we are good i am putting dinner on the table here myself they give you the rottenest time to call does not they
+  Sample 14: i do not really agree really i do not think that
+  Sample 15: i guess as far as i know they did not really give us any guidelines
+  Sample 16: she thinks that she's got every right to abuse me but i do not
+  Sample 17: my grandma used to own a house down there for the longest time it was in sarasota
+  Sample 18: bringing you a new crop to try out
+  Sample 19: i think that's south of me it's like in the southern tier
+  Sample 20: i have no idea maybe if we are just silent it will stop
+
+Emotions:
+  anger: 7.0% (average: 4.3%)
+  disgust: 4.7% (average: 2.1%)
+  fear: 2.3% (average: 4.5%)
+  joy: 2.3% (average: 13.0%)
+  neutral: 48.8% (average: 48.8%)
+  sadness: 20.9% (average: 8.3%)
+  surprise: 14.0% (average: 19.0%)
+
+Sentiment:
+  positive: 4.7% (average: 13.6%)
+  neutral: 48.8% (average: 58.7%)
+  negative: 46.5% (average: 27.7%)
+
+Basic Statistics:
+  Number of turns: Normal
+  Talking time per turn: Normal
+  Frequency of Laughter: Normal
+  Frequency of Emotive Backchannel: Normal
+  Frequency of Cognitive Backchannel: Normal
+  Frequency of interjections: Very Frequent
+
+```
+
+Your response must include the classification result in JSON format at the end of the response.
+You must perform analysis via following steps:
+1. Summarize features you need to consider for predicting conversation characters.
+2. Summarize the five conversation characters (BFI)
+3. Determine the analyzed features related to each conversation character.
+4. Summarize the sample responses.
+5. Summarize the emotion distribution.
+6. Summarize the sentiment scores
+7. Summarize the basic statistics.
+8. Classify the five conversation features with five options "highly aligned", "aligned", "neutral", "opposed", "highly opposed". Give "opposed" or "highly opposed" if the character is more aligned with the opposite terms.
+
+This is an example of JSON:
+{
+'openness': ...,
+'conscientiousness': ...,
+'extraversion': ...,
+'agreeableness': ...,
+'neuroticism': ...,
+}

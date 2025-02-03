@@ -1,0 +1,38 @@
+Your task is to classify the type of backchannel. There are two types of responses: turn-taking and interjections. We focus on interjections. We have two types of encouraging interjections (back-channel): emotive and cognitive.
+The backchannel responses are feedbacks given while someone else is talking, to show interest, attention and/or a willingness to keep listening
+Therefore, the interjections are not backchannels if the listener attempts to claim the speaking turn.
+
+The Emotive class is one of the backchannel response, which is used to express the speaker's emotional state. The Cognitive class is another backchannel response used to reflect the speaker's thought processes or cognitive states. Your task is to classify the following interjection, delimited by triple backticks, into "emotive", "cognitive", "not backchannel".
+The texts delimited by triple backticks contain the dialog and the target text response with '(TARGET)'.
+Triple curly blankets indicate the position of the interjection. 
+
+You also need to determine "sentiment" and "emotion" of the target interjection.
+"sentiment" has 5 classes: 'very positive', 'positive', 'neutral', 'negative', 'very negative'.
+"emotion" has 5 classes: 'neutral', 'sad', 'angry', 'happy', 'surprised'.
+
+```
+Target interjection text: right
+The speaker who speaks the text inside triple curly blankets: B
+
+Speaker A: i could have been but i was not [Pause] [StartLaugh] that's [EndLaugh] true nobody even looked twice the great thing about new york is that [Pause] somebody could be standing there puking on the platform and nobody cares people just walk right by and mind their own business
+Speaker B: that is true
+Speaker A: like in another city they would be like are you okay what's {{{(TARGET) Speaker B: right}}} going on
+Speaker B: and that allows you many freedoms as well right
+Speaker A: what
+```
+
+Your response must include the classification result in JSON format at the end of the response.
+You must perform analysis via following steps:
+1. Summarize conversation before and after the target response.
+2. Notice the target text.
+3. Determine whether the target text information is backchannel or not.
+4. [if backchannel] Determine whether the backchannel is emotive or cognitive. Note that if it's not backchannel, 'interjection type' becomes 'not backchannel'.
+5. Classify "interjection type"
+6. Classify "emotion" and "sentiment"
+This is an example of JSON:
+{
+'interjection text': "right",
+'interjection type': ...,
+'emotion': ...,
+'sentiment': ...,
+}

@@ -1,0 +1,83 @@
+Your task is to classify "Character" of the speaker in conversation using Big Five Inventory (BFI) Personality Traits. BFI includes five features: openness, conscientinousness, extraversion, agreeableness, and neuroticism, which is detailed as follows. We also display the opposite term for each class:
+- "openness": intellectual, imaginative, independent-minded; opposite term is "closedness".
+- "conscientiousness": orderly, responsible, dependable; opposite term is "lack of direction".
+- "extraversion": talkative, assertive, energetic; opposite term is "introversion".
+- "agreeableness": good-natured, cooperative, trustful; opposite term is "antagonism".
+- "neuroticism": emotional instability, irritability, anxiety, self-doubt, depression; opposite term is "emotion stability".
+
+We analyzed the real conversation between two speakers and summarize their behaviours. Your task is to classify the characters using those information and sample responses. Here, I define some words used in the analysis.
+- "backchannel": The backchannel responses are feedbacks given while someone else is talking, to show interest, attention and/or a willingness to keep listening. 
+- "emotive": The emotive backchannel is used to express the speaker's emotional state. 
+- "cognitive": The cognitive backchannel is another backchannel response used to reflect the speaker's thought processes or cognitive states. 
+- "interjection": Interjections are the responses that interject someone to stop talking and claim the speaking turn.
+
+Additionally, we also show some sample responses spoken by the target speaker. We randomly extract some samples from 12-minute conversation. We excluded special tokens like commas, periods, or question marks. 
+
+We put all information about the target speaker within the text delimited by triple backtics.
+
+```
+Sample Responses:
+  Sample 1: go ahead i interrupted you
+  Sample 2: oh i feel safe now i mean i felt safe you know because i know that i am from an area that i do not think anybody even knows
+  Sample 3: yeah and i mean other than that i do not know what good it would do to be angry because i mean they can not find the people that done it because they are dead
+  Sample 4: yeah i can see probably a lot of people that their boyfriend or girlfriend was in the military maybe getting married you know thinking that maybe they would get shipped off
+  Sample 5: it was a shock to me i could not believe it it was just it just surprised me
+  Sample 6: [StartLaugh] and [EndLaugh] do not know for sure who was behind it you know they say that i can not think of his name now
+  Sample 7: yes they say that he was behind it but i think that was more than just him behind it i mean they can not just blame it on one person to have so much power over so many people
+  Sample 8: oh yeah i do not see why anybody would well i mean i could see some people doing it you know that may have been affected really closely by it but me myself i do not think that i would have changed you i was already married anyway so i do not think i would have went and jumped and got married and all that
+  Sample 9: oh yeah that would be scary living there thinking that's you know a pretty popular city
+  Sample 10: i think that they somehow worked together
+  Sample 11: you know with them being all from well not all of them but most of them what 18 of them or something
+  Sample 12: you know i know how they feel losing one but i do not know how they feel losing one to terrorists that
+  Sample 13: yes [StartLaugh] so it makes you [EndLaugh] wonder then i mean i was scared right afterwards and you know i felt you know sad but yeah you know because there was a lot of people that died and i am sure there was probably everybody from every state that knew somebody because there was so many but that's about all i can think of is change for me but anything else has changed for you
+  Sample 14: i do not think not a lot just maybe you know i try to stay around my family more and you know communicate with them more
+  Sample 15: so far i do not think anything else for me has changed
+  Sample 16: i see every kind of connection i see that they are you know i would be looking into all the countries over there that had people on the plane you know not just osama bin laden and his group
+  Sample 17: but none up towards new york or washington or anywhere
+  Sample 18: you know immediately after i was kind of scared because i was thinking you know they were going to attack the whole united states after you know the other plane that went down in the field
+  Sample 19: yeah and i think they should look more into that
+  Sample 20: i still feel kind of angry at the people that done it just because i feel sorry for the families that lost loved ones my dad died not too long after that so
+
+Emotions:
+  anger: 4.4% (average: 4.3%)
+  disgust: 0.0% (average: 2.1%)
+  fear: 17.8% (average: 4.5%)
+  joy: 6.7% (average: 13.0%)
+  neutral: 40.0% (average: 48.8%)
+  sadness: 11.1% (average: 8.3%)
+  surprise: 20.0% (average: 19.0%)
+
+Sentiment:
+  positive: 11.1% (average: 13.6%)
+  neutral: 46.7% (average: 58.7%)
+  negative: 42.2% (average: 27.7%)
+
+Basic Statistics:
+  Number of turns: Normal
+  Talking time per turn: Normal
+  Frequency of Laughter: Normal
+  Frequency of Emotive Backchannel: Normal
+  Frequency of Cognitive Backchannel: Rare
+  Frequency of interjections: Normal
+
+```
+
+Your response must include the classification result in JSON format at the end of the response.
+You must perform analysis via following steps:
+1. Summarize features you need to consider for predicting conversation characters.
+2. Summarize the five conversation characters (BFI)
+3. Determine the analyzed features related to each conversation character.
+4. Summarize the sample responses.
+5. Summarize the emotion distribution.
+6. Summarize the sentiment scores
+7. Summarize the basic statistics.
+8. Classify the five conversation features with five options "highly aligned", "aligned", "neutral", "opposed", "highly opposed". Give "opposed" or "highly opposed" if the character is more aligned with the opposite terms.
+
+This is an example of JSON:
+{
+'openness': ...,
+'conscientiousness': ...,
+'extraversion': ...,
+'agreeableness': ...,
+'neuroticism': ...,
+}
