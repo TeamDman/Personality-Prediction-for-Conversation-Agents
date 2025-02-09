@@ -1,4 +1,4 @@
-This is the project page of our paper "Predicting Personality Traits for Fully-Duplex Conversation Agents". 
+This is the project page of our paper "Predicting Personality Traits using Textual, Acoustic, and Behavioral Cues in Fully-Duplex Speech Dialogs". 
 
 # What's available?
 - Paper: NA
