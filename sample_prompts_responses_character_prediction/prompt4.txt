@@ -39,18 +39,18 @@ Sample Responses:
   Sample 20: as long as we do not get into anything heavier or whatever i thought i read somewhere that the smoking is decreasing in men but increasing in women
 
 Emotions:
-  anger: 8.8% (average: 4.3%)
-  disgust: 3.5% (average: 2.1%)
-  fear: 7.0% (average: 4.5%)
-  joy: 10.5% (average: 13.0%)
-  neutral: 43.9% (average: 48.8%)
-  sadness: 14.0% (average: 8.3%)
-  surprise: 12.3% (average: 19.0%)
+  anger: 8.8%
+  disgust: 3.5%
+  fear: 7.0%
+  joy: 10.5%
+  neutral: 43.9%
+  sadness: 14.0%
+  surprise: 12.3%
 
 Sentiment:
-  positive: 8.8% (average: 13.6%)
-  neutral: 57.9% (average: 58.7%)
-  negative: 33.3% (average: 27.7%)
+  positive: 8.8%
+  neutral: 57.9%
+  negative: 33.3%
 
 Basic Statistics:
   Number of turns: Many

@@ -39,18 +39,18 @@ Sample Responses:
   Sample 20: i still feel kind of angry at the people that done it just because i feel sorry for the families that lost loved ones my dad died not too long after that so
 
 Emotions:
-  anger: 4.4% (average: 4.3%)
-  disgust: 0.0% (average: 2.1%)
-  fear: 17.8% (average: 4.5%)
-  joy: 6.7% (average: 13.0%)
-  neutral: 40.0% (average: 48.8%)
-  sadness: 11.1% (average: 8.3%)
-  surprise: 20.0% (average: 19.0%)
+  anger: 4.4%
+  disgust: 0.0%
+  fear: 17.8%
+  joy: 6.7%
+  neutral: 40.0%
+  sadness: 11.1%
+  surprise: 20.0%
 
 Sentiment:
-  positive: 11.1% (average: 13.6%)
-  neutral: 46.7% (average: 58.7%)
-  negative: 42.2% (average: 27.7%)
+  positive: 11.1%
+  neutral: 46.7%
+  negative: 42.2%
 
 Basic Statistics:
   Number of turns: Normal

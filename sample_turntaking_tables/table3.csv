@@ -1,0 +1,21 @@
+speaker,start,end,duration,transcription,Sentence-Emotion,Sentence-Sentiment
+Left Speaker,541.684,543.3199999999999,1.6359999999999673,like whenever for instance,neutral,neutral
+Left Speaker,544.156,550.3399999999999,6.183999999999969,they did a really cool program when they were talking about the midterm elections,joy,positive
+Right Speaker,551.0360000000001,551.34,0.3039999999999736,uh huh,neutral,neutral
+Left Speaker,551.1,561.36,10.259999999999991,and they were just criticizing everything about is this on yeah this is on comedy central i am not sure if people are talking about it at hour,neutral,negative
+Right Speaker,558.876,561.54,2.6639999999999873,i am not sure if we were talking about the same program,surprise,neutral
+Left Speaker,562.144,563.0440000000001,0.900000000000091,is it at the hour,neutral,neutral
+Right Speaker,562.4440000000001,563.56,1.1159999999998718,are we talking about mister howard,neutral,neutral
+Left Speaker,564.356,568.196,3.840000000000032,no no no this is comedy central it's at night,joy,neutral
+Right Speaker,568.792,569.06,0.2679999999999154,uh huh,neutral,neutral
+Left Speaker,569.1320000000001,570.4200000000001,1.288000000000011,it's called the news hour,neutral,neutral
+Right Speaker,571.252,571.78,0.52800000000002,news hour,neutral,neutral
+Left Speaker,572.7,574.3,1.599999999999909,and it,neutral,neutral
+Right Speaker,572.9680000000001,577.2479999999999,4.279999999999859,maybe i am not familiar with the program i was thinking about another program,neutral,neutral
+Left Speaker,575.8599999999999,578.108,2.2480000000000473,is like a,surprise,neutral
+Left Speaker,578.892,582.84,3.947999999999979,they make the mimic of a news program,neutral,neutral
+Right Speaker,583.184,583.4399999999999,0.2559999999999718,uh huh,neutral,neutral
+Left Speaker,584.1440000000001,586.0559999999999,1.9119999999998072,so they just start talking,neutral,neutral
+Left Speaker,587.22,588.3399999999999,1.1199999999998909,like reporting on the news,neutral,neutral
+Right Speaker,588.968,589.14,0.17200000000002547,yeah,neutral,neutral
+Left Speaker,589.868,592.08,2.211999999999989,and then they just start making fun of it,anger,negative

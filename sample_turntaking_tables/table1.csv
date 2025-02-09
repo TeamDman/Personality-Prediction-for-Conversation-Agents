@@ -1,0 +1,21 @@
+speaker,start,end,duration,transcription,Sentence-Emotion,Sentence-Sentiment
+Left Speaker,134.47199999999998,136.164,1.6920000000000073,well in general do you,neutral,neutral
+Left Speaker,136.98399999999998,138.66,1.6760000000000161,would you rather eat out or at home,neutral,neutral
+Right Speaker,138.47600000000003,142.88,4.403999999999968,i do not know i think i would rather eat at home there are a few things though like that i,joy,neutral
+Right Speaker,143.64,146.04,2.4000000000000057,can not necessarily cook very well,sadness,negative
+Right Speaker,146.896,161.908,15.012,yeah like sushi is the perfect example i am not going to sit at home and make sushi probably so in that case it's better to go out but if it's something like i do not know pasta i would rather cook it at home than go out and spend an exorbitant amount for something that's probably mediocre and something that i could do better myself,anger,negative
+Left Speaker,162.04399999999998,162.84,0.7960000000000207,yeah yeah,neutral,positive
+Right Speaker,163.29000000000002,164.12,0.8299999999999841,yeah how about you,neutral,neutral
+Left Speaker,164.52,169.07999999999998,4.559999999999974,well that's true you know one thing i always say i never order in a restaurant is steak because,neutral,neutral
+Left Speaker,169.92399999999998,173.58,3.6560000000000343,you know if you are going to cook a steak you put it on the grill you know you bake a [StartLaugh] potato,neutral,neutral
+Left Speaker,174.716,182.14,7.423999999999978,i just [EndLaugh] can not understand people who go to steakhouses to eat steak and i really never order steak and we barely have it at home anyway,surprise,negative
+Right Speaker,182.46,182.68,0.21999999999999886,right,neutral,neutral
+Left Speaker,183.04,193.28,10.240000000000009,you know i stay away from you know red meat in restaurants especially it's weird i would rather eat seafood you know if i am going out yeah i would rather eat something i can not cook,disgust,negative
+Right Speaker,193.59599999999998,193.82,0.22400000000001796,right,neutral,neutral
+Left Speaker,196.056,198.94,2.883999999999986,so yeah and it gets expensive too,sadness,negative
+Right Speaker,199.51600000000002,199.82000000000002,0.30400000000000205,for sure,neutral,neutral
+Left Speaker,199.7,205.264,5.564000000000021,i do not know some people eat out quite a bit and i guess if,disgust,neutral
+Left Speaker,207.2,216.58,9.380000000000024,your stocks are doing well then you [StartLaugh] can afford to you can afford to [EndLaugh] out a lot [StartLaugh] but yeah [EndLaugh],neutral,positive
+Left Speaker,217.34,219.84799999999998,2.5079999999999814,there's not that much,neutral,neutral
+Left Speaker,220.7,223.4,2.700000000000017,of a huge choice in town like where else do you go,surprise,neutral
+Right Speaker,223.85999999999999,224.484,0.6240000000000236,right exactly,neutral,negative

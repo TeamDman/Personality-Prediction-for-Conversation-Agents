@@ -39,18 +39,18 @@ Sample Responses:
   Sample 20: right well what really saddened me was not only was i not allowed to take my pocketbook in but i am asthmatic and i carry an inhaler and they did not want me to i had to get like special permission to be able to carry something like that in with me should i need it wow
 
 Emotions:
-  anger: 0.0% (average: 4.3%)
-  disgust: 0.0% (average: 2.1%)
-  fear: 8.6% (average: 4.5%)
-  joy: 5.2% (average: 13.0%)
-  neutral: 46.6% (average: 48.8%)
-  sadness: 17.2% (average: 8.3%)
-  surprise: 22.4% (average: 19.0%)
+  anger: 0.0%
+  disgust: 0.0%
+  fear: 8.6%
+  joy: 5.2%
+  neutral: 46.6%
+  sadness: 17.2%
+  surprise: 22.4%
 
 Sentiment:
-  positive: 3.4% (average: 13.6%)
-  neutral: 63.8% (average: 58.7%)
-  negative: 32.8% (average: 27.7%)
+  positive: 3.4%
+  neutral: 63.8%
+  negative: 32.8%
 
 Basic Statistics:
   Number of turns: Normal

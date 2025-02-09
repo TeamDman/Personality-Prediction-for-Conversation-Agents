@@ -1,0 +1,21 @@
+speaker,start,end,duration,transcription,BC-Labels
+Left Speaker,128.864,129.0,0.13599999999999568,okay,cognitive
+Left Speaker,132.01200000000003,132.24,0.22799999999998022,mm hmm,cognitive
+Left Speaker,142.116,142.24,0.12399999999999523,yeah,cognitive
+Right Speaker,161.564,161.77999999999997,0.21599999999997976,yeah,cognitive
+Right Speaker,189.9,190.44,0.539999999999992,right,cognitive
+Left Speaker,207.808,208.42,0.6119999999999948,yeah you are right,emotive
+Left Speaker,209.424,209.624,0.19999999999998863,it's,cognitive
+Right Speaker,220.216,220.38,0.16399999999998727,yeah,cognitive
+Right Speaker,242.66400000000002,242.94,0.27599999999998204,right,cognitive
+Right Speaker,264.868,265.32,0.4519999999999982,let us see,not backchannel
+Right Speaker,279.696,280.44,0.7439999999999714,no smoking,not backchannel
+Right Speaker,307.884,308.228,0.3439999999999941,yeah,emotive
+Right Speaker,309.968,310.15999999999997,0.19199999999995043,yeah,cognitive
+Right Speaker,447.148,448.4,1.2519999999999527,yep yeah,cognitive
+Right Speaker,451.8,453.2,1.3999999999999773,yeah,cognitive
+Right Speaker,518.3519999999999,518.54,0.18800000000010186,so,not backchannel
+Right Speaker,573.3800000000001,574.74,1.3599999999999,yeah right,cognitive
+Right Speaker,580.696,581.092,0.39599999999995816,mm hmm,cognitive
+Right Speaker,585.8040000000001,585.96,0.15599999999994907,yeah,emotive
+Right Speaker,588.336,588.676,0.34000000000003183,yeah yeah,emotive

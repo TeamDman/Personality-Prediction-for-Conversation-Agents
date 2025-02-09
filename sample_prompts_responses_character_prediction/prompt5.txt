@@ -39,18 +39,18 @@ Sample Responses:
   Sample 20: hey me too i would be interested in opening a craft store actually yes
 
 Emotions:
-  anger: 3.8% (average: 4.3%)
-  disgust: 0.0% (average: 2.1%)
-  fear: 3.8% (average: 4.5%)
-  joy: 11.5% (average: 13.0%)
-  neutral: 46.2% (average: 48.8%)
-  sadness: 0.0% (average: 8.3%)
-  surprise: 34.6% (average: 19.0%)
+  anger: 3.8%
+  disgust: 0.0%
+  fear: 3.8%
+  joy: 11.5%
+  neutral: 46.2%
+  sadness: 0.0%
+  surprise: 34.6%
 
 Sentiment:
-  positive: 15.4% (average: 13.6%)
-  neutral: 65.4% (average: 58.7%)
-  negative: 19.2% (average: 27.7%)
+  positive: 15.4%
+  neutral: 65.4%
+  negative: 19.2%
 
 Basic Statistics:
   Number of turns: Normal

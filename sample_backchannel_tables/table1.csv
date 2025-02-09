@@ -1,0 +1,21 @@
+speaker,start,end,duration,transcription,BC-Labels
+Right Speaker,3.3480000000000025,3.412000000000002,0.06399999999999961,hi,not backchannel
+Left Speaker,9.155999999999999,10.42,1.2640000000000011,oh okay well so am i,not backchannel
+Left Speaker,16.168,16.32,0.15200000000000102,yeah,emotive
+Right Speaker,24.932,25.06,0.1280000000000001,right,cognitive
+Left Speaker,29.560000000000002,30.56,0.9999999999999964,right right,cognitive
+Right Speaker,34.928,35.12,0.19200000000000017,yeah,cognitive
+Left Speaker,72.63199999999999,72.84,0.20800000000001262,yeah,not backchannel
+Right Speaker,78.636,79.03999999999999,0.40399999999999636,oh cool,emotive
+Right Speaker,80.3,80.31,0.010000000000005116,[Laugh],emotive
+Right Speaker,85.71199999999999,85.88,0.16800000000000637,right,cognitive
+Left Speaker,97.212,97.42000000000002,0.20800000000001262,yeah,emotive
+Right Speaker,111.536,111.76,0.22400000000000375,mm hmm,cognitive
+Right Speaker,116.536,117.38000000000001,0.8440000000000083,i have not been there in a while,not backchannel
+Right Speaker,121.788,122.16,0.3719999999999999,wow,emotive
+Right Speaker,185.564,186.70000000000002,1.136000000000024,red meat yeah,cognitive
+Right Speaker,190.472,190.66000000000003,0.1880000000000166,uh huh,cognitive
+Right Speaker,208.91,208.92,0.009999999999990905,[Laugh],emotive
+Left Speaker,234.792,235.04,0.24799999999999045,mm hmm,cognitive
+Left Speaker,237.28,237.46,0.18000000000000682,yeah,cognitive
+Right Speaker,244.328,244.57999999999998,0.25199999999998113,mm hmm,emotive
