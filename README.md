@@ -1,7 +1,7 @@
 This is the project page of our paper "Predicting Personality Traits using Textual, Acoustic, and Behavioral Cues in Fully-Duplex Speech Dialogs". 
 
 <p align="center">
-<img src="https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/images/title.png" width="600">
+<img src="https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/images/title.png" width="900">
 </p>
 
 <p align="center">
