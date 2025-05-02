@@ -10,7 +10,6 @@ We'll proceed with this implementation in a notebook form. We also share our doc
 
 # How to Start
 ## Import and Modify External Codes
-laughter detection
 ```bash
 cd <directory of git repository>
 git clone https://github.com/jrgillick/laughter-detection.git
@@ -18,7 +17,7 @@ git clone https://github.com/shinshoji01/Personality-Prediction-for-Conversation
 cd Personality-Prediction-for-Conversation-Agents
 git submodule update --init --recursive
 ```
-Please modify some lines in `<directory of git repository>/laughter-detection/`
+Please modify some lines in `<directory of git repository>/laughter-detection/`.
 Modify lines 95 and 109 of `utils/torch_utils.py` as follows.
 ```bash
 Line 95
@@ -44,3 +43,4 @@ pip uninstall jupyter-vim
 Then, go to http://localhost:1234/lab
 
 ## Run Notebooks from 01-05
+Visit `implementation/notebooks/`
