@@ -1,12 +1,16 @@
 We'll proceed with this implementation in a notebook form. We also share our docker environment for everybody to run the code.
 
 # Notebooks
-- [01_Transliteration_via_LLM.ipynb](https://github.com/shinshoji01/MacST-project-page/blob/main/implementation/notebooks/01_Transliteration_via_LLM.ipynb)
-  - Transliteration via Large Language Models (LLMs)
-- [02_TTS_via_Elevenlabs.ipynb](https://github.com/shinshoji01/MacST-project-page/blob/main/implementation/notebooks/02_TTS_via_Elevenlabs.ipynb)
-  - Multilingual Text-to-Speech (TTS) via Elevenlabs
-- [A_Transliteration_the_and_a.ipynb](https://github.com/shinshoji01/MacST-project-page/blob/main/implementation/notebooks/A_Transliteration_the_and_a.ipynb)
-  - Transliteration of "the" and "a". We support "Hindi", "Korean", and "Japanese". If you want to transliterate to other languages you need to run this notebook in advance.
+- [01_Preprocess_Two-Channel_Audio.ipynb](https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/implementation/notebooks/01_Preprocess_Two-Channel_Audio.ipynb)
+    - Preprocessing two-channel audio to obtain word-level transcriptions and laughter probabilities.
+- [02_Dialog_Structure_Generation.ipynb](https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/implementation/notebooks/02_Dialog_Structure_Generation.ipynb)
+    - Constructing dialog structure.
+- [03_Emotion_Sentiment_Prediction.ipynb](https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/implementation/notebooks/03_Emotion_Sentiment_Prediction.ipynb)
+    - Predicting utterance-level emotion and sentiment.
+- [04_Backchannel_Prediction.ipynb](https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/implementation/notebooks/04_Backchannel_Prediction.ipynb)
+    - Predicting backchannel types using LLMs.
+- [05_Personality_Prediction.ipynb](https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/implementation/notebooks/05_Personality_Prediction.ipynb)
+    - Predicting personality types using LLMs.
 
 # How to Start
 ## Import and Modify External Codes
