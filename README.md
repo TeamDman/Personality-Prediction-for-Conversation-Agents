@@ -1,4 +1,4 @@
-This is the project page of our paper "Predicting Personality Traits using Textual, Acoustic, and Behavioral Cues in Fully-Duplex Speech Dialogs". 
+This is the project page of our paper "PersonaTAB: Predicting Personality Traits using Textual, Acoustic, and Behavioral Cues in Fully-Duplex Speech Dialogs". 
 
 <p align="center">
 <img src="https://github.com/shinshoji01/Personality-Prediction-for-Conversation-Agents/blob/main/images/title.png" width="900">
@@ -9,7 +9,7 @@ This is the project page of our paper "Predicting Personality Traits using Textu
 </p>
 
 # What's available?
-- Paper: NA
+- Paper: [link](https://arxiv.org/abs/2505.14356)
 - Implementation of PersonaTAB: `implementation/`
 - Sample Prompts and Responses for Backchannel Classification: `sample_prompts_responses_backchannel_chassification/`
 - Sample Prompts and Responses for Personality Prediction: `sample_prompts_responses_character_prediction/`
