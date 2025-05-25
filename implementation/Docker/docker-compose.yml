@@ -8,6 +8,7 @@ services:
     ports:
       - 1234:1234
     volumes:
-      - "~/:/work/"
+      - "G:/Programming/Repos/Personality-Prediction-for-Conversation-Agents:/work/Personality-Prediction-for-Conversation-Agents"
+      - "G:/Programming/Repos/laughter-detection:/work/laughter-detection"
     tty: true
     stdin_open: true
