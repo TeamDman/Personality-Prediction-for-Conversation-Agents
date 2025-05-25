@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 .DS_Store
 __pycache__/
+implementation/audio/features
+implementation/notebooks/temp.wav
